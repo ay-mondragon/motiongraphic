@@ -1,0 +1,85 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: cornsilk;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: auto;
+    border: 1px solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
+
+.bienvenida {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.bienvenida h1 {
+    color: rgb(223, 223, 26);
+}
+
+.texto {
+    max-width: 600px;
+}
+
+.logo img, .carrito img, .slideshow img, .foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos responsivos (Media Queries) */
+
+@media (max-width: 1024px) {
+    .contenedor {
+        background: green;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .contenedor {
+        background-color: blue;
+    }
+}
